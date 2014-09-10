@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kara Bernert</title>
+  <meta charset="utf-8">
+  <link
+    href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600'
+    rel='stylesheet'
+    type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <style>
+    /* RESET */
+    body, main, img, section,
+    nav, h1, h2, h3, h4, h5,
+    h6, p, ul, li, footer, small {
+      border: 0;
+      padding: 0;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: inherit;
+      font-size: inherit;
+      text-decoration: none;
+/*      border: 1px solid blue;*/
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    body {
+      font-size: 14px;
+      margin: 80px auto;
+      padding: 0 10px;
+      width: 750px;
+      overflow: scroll;
+    }
+
+    /*CLEARFIX*/
+    .group:after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+    /*STYLE*/
+    main {
+    }
+
+    h1 {
+      font-weight: 300;
+      font-size: 48px;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-weight: 300;
+      display: block;
+      float: left;
+    }
+
+    nav > div {
+      display: block;
+      margin: 15px 0;
+      width: 120px;
+    }
+
+    nav > div:hover {
+      color: #00ccee;
+      cursor: pointer;
+      font-weight: 400;
+    }
+
+    section {
+      display: block;
+      float: right;
+      width: 600px;
+      min-height: 400px;
+      padding: 20px 10px;
+
+    }
+
+    .about img {
+      width: 600px;
+    }
+
+    .bw {
+      -webkit-filter: grayscale(100%);
+    }
+
+    .about p {
+      margin: 15px 0;
+    }
+
+    .resume h2 {
+      font-weight: 400;
+      border-bottom: 1px solid #000;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .resume h3 {
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .resume h4 {
+      font-style: italic;
+    }
+
+    .resume div {
+      float: right;
+    }
+
+    .resume p, .resume li {
+      font-size: 13px;
+      margin: 3px 0;
+    }
+
+    .resume ul {
+      width: 600px;
+    }
+
+    .resume li {
+      list-style-type: circle;
+      list-style-position: inside;
+      padding-left: 5px;
+    }
+
+    .resume h5 {
+      font-style: italic;
+      font-weight: 400;
+      margin-top: 15px;
+    }
+
+    ul.image-banner {
+      width: 600px;
+      margin-bottom: 20px;
+    }
+
+    ul.image-banner li{
+      width: 100px;
+      display:block;
+      float: left;
+      padding-top: 100px;
+      height: 0;
+      overflow: hidden;
+    }
+
+    #backbone {
+      background-image: url('https://s3.amazonaws.com/karabernert/backbone.png');
+      background-size: 560px;
+      background-repeat: no-repeat;
+      margin-left: 10px;
+    }
+
+    #ruby {
+      background-image: url('https://s3.amazonaws.com/karabernert/ruby.png');
+      background-size: 100px;
+      background-repeat: no-repeat;
+
+    }
+
+    #html5 {
+      background-image: url('https://s3.amazonaws.com/karabernert/HTML5_Logo_128.png');
+      background-size: 100px;
+      background-repeat: no-repeat;
+     margin-left: 10px;
+
+    }
+    #jquery {
+      background-image: url('https://s3.amazonaws.com/karabernert/jQuery-Logo.png');
+      background-size: 540px;
+      background-repeat: no-repeat;
+      margin-left: 10px;
+    }
+
+    #pgsql {
+      background-image: url('https://s3.amazonaws.com/karabernert/PostgreSQL_logo.3colors.120x120.png');
+      background-size: 100px;
+      background-repeat: no-repeat;
+      margin-left: 15px;
+    }
+
+    footer {
+      height: 20px;
+      width: 750px;
+      display: block;
+      margin: 100px 0;
+    }
+
+    small {
+      float: right;
+      display: block;
+      position: relative;
+      color: #888;
+      padding-right: 60px;
+    }
+
+    #jellyfish {
+      width: 40px;
+      position: absolute;
+      opacity: .5;
+      bottom: -15px;
+      right: 10px;
+    }
+    /*
+      for jquery
+    */
+    section.hide {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>KARA BERNERT</h1>
+
+  <main class="group">
+
+    <nav>
+      <div class="tab" data-page=".about">ABOUT</div>
+      <div class="tab" data-page=".resume">RESUME</div>
+      <div class="tab" data-page=".projects">PROJECTS</div>
+      <div class="tab" data-page=".contact">CONTACT</div>
+    </nav>
+    <section class="about">
+      <img class="bw" src="li_sound.jpg" >
+      <p>Kara is a web developer for hire out of Manhattan, originally from southern Massachusetts and Boston with a background in scientific research and an abiding love for the ocean and gummy bears.</p>
+
+    </section>
+
+    <section class="resume hide">
+      <ul class="image-banner group bw">
+        <li id="backbone">Backbone.js</li>
+        <li id="ruby">Ruby</li>
+        <li id="html5">HTML5</li>
+        <li id="jquery">JQuery</li>
+        <li id="pgsql">PostgreSQL</li>
+      </ul>
+      <h2>LANGUAGES AND TECHNOLOGIES</h2>
+
+      <h3>Web Development</h3>
+      <h4>Ordered by familiarity</h4>
+      <p>Ruby on Rails, HTML, CSS, Javascript, JQuery, Backbone.js, SQL, Node.js, Python, Git, basic algorithms and data structures, introductory Java</p>
+
+      <h3>Scientific Analysis and Research</h3>
+      <p>Statistical analysis with R, protein modeling with Swiss PDB viewer and RasMol, computational chemistry with Gaussian and Spartan software, research using scientific databases</p>
+
+      <h3>Design</h3>
+      <p>Adobe Illustrator, Adobe InDesign, Inkscape</p>
+
+      <h2>EDUCATION</h2>
+
+      <h3 class="group">Wellesley College	<div>Wellesley, MA</div></h3>
+      <h4>B.A. in Chemistry and Women’s and Gender Studies, October 2012 </h4>
+      <p>Course work: Organic, Inorganic, Biological and Physical Chemistry, Bioethics, Physics, Cellular Biology, Genetics, Science Writing, Women’s and Gender Studies Calculus, French, Drawing, Java at MIT</p>
+
+
+      <h3 class="group">Bowdoin College	<div>Cambridge, MA</div></h3>
+      <h4>Exchange Study Program, 2010</h4>
+      <p>Coursework: Advanced Organic Chemistry, Feminist Theory, Psychology, Ballet</p>
+
+      <h3 class="group">Harvard University	<div>Brunswick, ME</div></h3>
+      <h4>Extension School, 2011, 2012, 2014</h4>
+      <p>Coursework: French, Biostatistics</p>
+
+      <h3 class="group">App Academy	<div>Manhattan, NY</div></h3>
+      <h4>Intensive Course in Web Development, 2014</h4>
+
+      <h2>EXPERIENCE</h2>
+
+      <h3 class="group">Brigham and Women’s Hospital	<div>Boston, MA</div></h3>
+      <h4>Technical Research Asssistant II, 2013-2014</h4>
+      <ul>
+        <li>Maintained multiple breeding mouse colonies and performed murine microsurgeries</li>
+        <li>Performed various biochemical analyses with lipids, proteins, and DNA</li>
+        <li>Received minimal supervision and initiated and completed highly self-directed research</li>
+        <li>Analyzed data and prepared figures using R, and wrote and edited scientific papers for publication</li>
+      </ul>
+
+      <h3 class="group">Hey, Madeline Magazine, Wellesley College	<div>Wellesley, MA</div></h3>
+      <h4>Layout Director, 2010–2012</h4>
+      <ul>
+        <li>Managed, with a small executive board, a bi-monthly on-campus magazine with a staff of approximately twenty-five students</li>
+        <li>Produced final magazines with Adobe InDesign software</li>
+      </ul>
+
+      <h3 class="group">Thermax, Inc.	<div>Dartmouth, MA</div></h3>
+      <h4>Data Management, Summer 2010 and 2012</h4>
+      <ul>
+        <li>Helped create database in Microsoft Access to monitor inventory and maintain a shop schedule</li>
+        <li>Used Microsoft Excel to organize data and calculations on completed jobs/units</li>
+      </ul>
+
+      <h5>References Available Upon Request</h5>
+
+    </section>
+    <section class="projects hide">
+      projects
+    </section>
+    <section class="contact hide">
+      <h6>200 East 90th Street, New York, NY</h6>
+      <h6>508.415.9572</h6>
+      <h6>krbernert@gmail.com</h6>
+      <h6>@e_beavz</h6>
+      <h6>https://github.com/beavz</h6>
+    </section>
+  </main>
+  <footer>
+    <small>K.R.Bernert - 2014<img id="jellyfish" src="https://s3.amazonaws.com/karabernert/icon_53744.png"></small>
+  </footer>
+
+  <script>
+  window.currentPage = $(".about");
+  window.changePage = function (event) {
+    console.log("HI")
+    newPage = $(event.currentTarget).data().page
+    window.currentPage.toggleClass("hide");
+    window.currentPage = $(newPage);
+    window.currentPage.toggleClass("hide");
+  };
+
+  $("nav").on("click", ".tab", window.changePage)
+  </script>
+</body>
+</html>
+
+<!-- The Ruby logo is Copyright © 2006, Yukihiro Matsumoto.
+
+It is licensed under the terms of the Creative Commons Attribution-ShareAlike 2.5 License agreement. http://creativecommons.org/licenses/by-sa/2.5/-->
+
+<!--BACKBONE LOGO:
+Copyright (c) 2010-2014 Jeremy Ashkenas, DocumentCloud
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+at : https://github.com/jashkenas/backbone/blob/master/LICENSE
+https://raw.githubusercontent.com/documentcloud/backbone/master/docs/images/backbone.png
+
+PGSQL logo : ok to use-->
