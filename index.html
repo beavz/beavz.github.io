@@ -13,7 +13,7 @@
     /* RESET */
     body, main, img, section,
     nav, h1, h2, h3, h4, h5,
-    h6, p, ul, li, footer, small {
+    h6, p, ul, li, footer, small, a {
       border: 0;
       padding: 0;
       margin: 0;
@@ -95,27 +95,27 @@
       margin: 15px 0;
     }
 
-    .resume h2 {
+    h2 {
       font-weight: 400;
       border-bottom: 1px solid #000;
       margin-top: 10px;
       font-size: 18px;
     }
 
-    .resume h3 {
+    h3 {
       font-weight: 600;
       margin-top: 10px;
     }
 
-    .resume h4 {
+    h4 {
       font-style: italic;
     }
 
-    .resume div {
+    .resume div, .projects div {
       float: right;
     }
 
-    .resume p, .resume li {
+    .resume p, .resume li, .projects p {
       font-size: 13px;
       margin: 3px 0;
     }
@@ -130,7 +130,7 @@
       padding-left: 5px;
     }
 
-    .resume h5 {
+    h5 {
       font-style: italic;
       font-weight: 400;
       margin-top: 15px;
@@ -183,6 +183,95 @@
       background-size: 100px;
       background-repeat: no-repeat;
       margin-left: 15px;
+    }
+
+    .projects li {
+      margin-bottom: 15px;
+      padding: 5px;
+    }
+
+    .projects li:hover h2 {
+      color: #00ccee;
+      font-weight: 600;
+    }
+
+    .projects img {
+      width: 100px;
+      float: left;
+      display: block;
+      background: #eee;
+    }
+
+    .projects h2 {
+      margin-top: 0;
+    }
+
+    article.project-info {
+      width: 470px;
+      float: left;
+      margin-left: 15px;
+      display: block;
+      position: relative;
+    }
+
+    a.gitrepo {
+      background-image: url("https://s3.amazonaws.com/karabernert.com/github32.png");
+      width: 32px;
+      overflow: hidden;
+      height: 0px;
+      padding-top: 32px;
+      display: block;
+      z-index: 100;
+    }
+
+    div.octocat-mask {
+      background: #fff;
+      opacity: 1;
+      z-index: 99;
+      display: block;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      left: 400px;
+      bottom: 45px;
+      border-radius: 16px;
+    }
+
+    div.octocat-mask:hover {
+      background: #00ccee;
+    }
+
+    a.gitrepo:hover {
+      opacity: .6;
+      cursor: pointer;
+    }
+
+    a.demo {
+      display: none;
+    }
+
+    .projects li {
+      position: relative;
+    }
+
+    .projects li:hover a.demo {
+      color: #fff;
+      background: #00ccee;
+      font-weight: 600;
+      font-size: 12px;
+      z-index: 101;
+      display: block;
+      width: 36px;
+      padding: 12px 2px;
+      height: 16px;
+      position: absolute;
+      border-radius: 20px;
+      left: 60px;
+      bottom: 10px;
+      opacity: .9;
+    }
+    a.demo:hover {
+      cursor: pointer;
     }
 
     footer {
@@ -260,11 +349,11 @@
       <p>Course work: Organic, Inorganic, Biological and Physical Chemistry, Bioethics, Physics, Cellular Biology, Genetics, Science Writing, Women’s and Gender Studies Calculus, French, Drawing, Java at MIT</p>
 
 
-      <h3 class="group">Bowdoin College	<div>Cambridge, MA</div></h3>
+      <h3 class="group">Bowdoin College	<div>Brunswick, ME</div></h3>
       <h4>Exchange Study Program, 2010</h4>
       <p>Coursework: Advanced Organic Chemistry, Feminist Theory, Psychology, Ballet</p>
 
-      <h3 class="group">Harvard University	<div>Brunswick, ME</div></h3>
+      <h3 class="group">Harvard University	<div>Cambridge, MA</div></h3>
       <h4>Extension School, 2011, 2012, 2014</h4>
       <p>Coursework: French, Biostatistics</p>
 
@@ -300,7 +389,54 @@
 
     </section>
     <section class="projects hide">
-      projects
+      <ul id="projects" class="group">
+        <li class="okclone group">
+          <a class="demo" href="http://okclone.karabernert.com">DEMO</a>
+          <img src="https://s3.amazonaws.com/karabernert.com/jellyfish.png">
+          <article class="project-info">
+            <div class="octocat-mask"><a class="gitrepo">OKCLONE REPO</a></div>
+            <h2 class="group">OKCLONE</h2>
+            <h3>A clone of the dating site okcupid</h3>
+            <p>Rails API with a Backbone.js front end</p>
+          </article>
+        </li>
+        <li class="arlite group">
+          <img src="https://s3.amazonaws.com/karabernert.com/jellyfish.png">
+          <article class="project-info">
+            <div class="octocat-mask"><a class="gitrepo">ACTIVE RECORD LITE REPO</a></div>
+            <h2 class="group">ACTIVE RECORD LITE (soon)</h2>
+            <h3>A reproduction of some functionality of Rails' Active Record</h3>
+            <p>Plenty of Ruby, a little bit of meta-programming. method_missing ftw.</p>
+          </article>
+        </li>
+        <li class="snake group">
+          <img src="https://s3.amazonaws.com/karabernert.com/jellyfish.png">
+          <article class="project-info">
+            <div class="octocat-mask"><a class="gitrepo">fas</a></div>
+            <h2 class="group">SNAKE (soon)</h2>
+            <h3>Classic game of snake, but with a friend.</h3>
+            <p>All javascript and CSS, baby.</p>
+          </article>
+        </li>
+        <li class="chess group">
+          <img src="https://s3.amazonaws.com/karabernert.com/jellyfish.png">
+          <article class="project-info">
+            <div class="octocat-mask"><a class="gitrepo">CHESS REPO</a></div>
+            <h2 class="group">CHESS (soon)</h2>
+            <h3>Command line chess game.</h3>
+            <p>All ruby, all the time.</p>
+          </article>
+        </li>
+        <li class="railslite group">
+          <img src="https://s3.amazonaws.com/karabernert.com/jellyfish.png">
+          <article class="project-info">
+            <div class="octocat-mask"><a class="gitrepo">RAILS LITE REPO</a></div>
+            <h2 class="group">RAILS LITE (soon)</h2>
+            <h3>Reproduction of some of the Rails MVC.</h3>
+            <p>Best way to learn it is to make it.</p>
+          </article>
+        </li>
+      </ul>
     </section>
     <section class="contact hide">
       <h6>krbernert@gmail.com</h6>
@@ -315,7 +451,6 @@
   <script>
   window.currentPage = $(".about");
   window.changePage = function (event) {
-    console.log("HI")
     newPage = $(event.currentTarget).data().page
     window.currentPage.toggleClass("hide");
     window.currentPage = $(newPage);
