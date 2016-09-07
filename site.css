@@ -149,7 +149,6 @@ ul.image-banner li{
   background-image: url('https://s3.amazonaws.com/karabernert.com/ruby.png');
   background-size: 100px;
   background-repeat: no-repeat;
-
 }
 
 #html5 {
@@ -157,8 +156,8 @@ ul.image-banner li{
   background-size: 100px;
   background-repeat: no-repeat;
  margin-left: 10px;
-
 }
+
 #jquery {
   background-image: url('https://s3.amazonaws.com/karabernert.com/jquery.png');
   background-size: 540px;
