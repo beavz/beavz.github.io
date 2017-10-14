@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/beavz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://karabernert.com
+  * I am beavz (https://keybase.io/beavz) on keybase.
+  * I have a public key ASBLRRKXWFmBbeuEBWjSnZfK0p884ly154Uo5zOESo_Mxgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204b4512975859816deb840568d29d97cad29f3ce25cb5e78528e733844a8fccc60a",
+      "host": "keybase.io",
+      "kid": "01204b4512975859816deb840568d29d97cad29f3ce25cb5e78528e733844a8fccc60a",
+      "uid": "e286cbe7ca119205be7d4828c53c5919",
+      "username": "beavz"
+    },
+    "merkle_root": {
+      "ctime": 1508003143,
+      "hash": "8023baef78cced02b996dd1cf32287d1940c1e2b0962f1ed7e3b84dd836d6f0c1c64478ee5457a4565eac826e297a4b3bace53963cdf6d1c02d9757f64fdb20e",
+      "hash_meta": "3d9fae5d62009535bb924c450d2cc7aa8b1516a7bdcc88ccf3b1e8f366eaf396",
+      "seqno": 1578368
+    },
+    "service": {
+      "hostname": "karabernert.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.33"
+  },
+  "ctime": 1508003194,
+  "expire_in": 504576000,
+  "prev": "fb21669c7e546fc91d8a59c17bd3a4d41c0d0efe9ecdddc96f119992f76e8735",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgS0USl1hZgW3rhAVo0p2XytKfPOJcteeFKOczhEqPzMYKp3BheWxvYWTFA0N7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNGI0NTEyOTc1ODU5ODE2ZGViODQwNTY4ZDI5ZDk3Y2FkMjlmM2NlMjVjYjVlNzg1MjhlNzMzODQ0YThmY2NjNjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNGI0NTEyOTc1ODU5ODE2ZGViODQwNTY4ZDI5ZDk3Y2FkMjlmM2NlMjVjYjVlNzg1MjhlNzMzODQ0YThmY2NjNjBhIiwidWlkIjoiZTI4NmNiZTdjYTExOTIwNWJlN2Q0ODI4YzUzYzU5MTkiLCJ1c2VybmFtZSI6ImJlYXZ6In0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTA4MDAzMTQzLCJoYXNoIjoiODAyM2JhZWY3OGNjZWQwMmI5OTZkZDFjZjMyMjg3ZDE5NDBjMWUyYjA5NjJmMWVkN2UzYjg0ZGQ4MzZkNmYwYzFjNjQ0NzhlZTU0NTdhNDU2NWVhYzgyNmUyOTdhNGIzYmFjZTUzOTYzY2RmNmQxYzAyZDk3NTdmNjRmZGIyMGUiLCJoYXNoX21ldGEiOiIzZDlmYWU1ZDYyMDA5NTM1YmI5MjRjNDUwZDJjYzdhYThiMTUxNmE3YmRjYzg4Y2NmM2IxZThmMzY2ZWFmMzk2Iiwic2Vxbm8iOjE1NzgzNjh9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoia2FyYWJlcm5lcnQuY29tIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zMyJ9LCJjdGltZSI6MTUwODAwMzE5NCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiJmYjIxNjY5YzdlNTQ2ZmM5MWQ4YTU5YzE3YmQzYTRkNDFjMGQwZWZlOWVjZGRkYzk2ZjExOTk5MmY3NmU4NzM1Iiwic2Vxbm8iOjgsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAtB7QaKFkfVC90ymGOMnoPqh9JRDsFG8ZfAJm+z89UZILjg5+DqHiU4HW0SZEMcVQkJiYrWOYBfal79cmqfucBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJu4CuIbm6WFueLUKedd8lv+VpTCwDFLuWqsj0+oaQJLo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/beavz
+
+==================================================================
