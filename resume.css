@@ -5,24 +5,22 @@ h6, p, ul, li, footer, small, a {
   border: 0;
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Calibri', 'Open Sans', sans-serif;
   font-weight: inherit;
   font-size: inherit;
   text-decoration: none;
   line-height: 1.4;
-}
-
-ul {
-  list-style: none;
+  text-rendering: optimizeLegibility;
 }
 
 body {
-  font-size: 14px;
   margin: 0px;
-  background-color: gray;
+  background-color: #eeeeee;
+  color: #222;
 }
 
 /* layout */
+
 
 .group:after {
   content: "";
@@ -38,72 +36,63 @@ body {
   background-color: white;
   width: 8.5in;
   height: 11in;
-  padding: 0.3in 0.5in;
-}
-
-.content {
   display: flex;
 }
 
-.technologies {
-  width: 2.5in;
-  flex-grow: 1;
-  padding-right: 0.25in;
+section {
+  margin-bottom: 20px;
 }
 
-.education {
+.name {
+  position: absolute;
+  background-color: #222;
+  color: #eeeeee;
+  width: calc(8.5in - 80px);
+  top: 20px;
+  padding: 10px 40px;
+}
+
+.left, .right {
+  padding: 20px;
+  padding-top: 90px;
+}
+
+.left {
+  flex-shrink: 0;
   flex-grow: 0;
-  width: 5in;
+  width: 19%;
+  margin-left: 20px;
+  background-color: #cccccc;
 }
 
-.contact {
-  text-align: center;
-  padding-bottom: .35in;
-}
+.right { margin-right: 10px; }
 
-.experience {
-  padding-bottom: 0.25in;
-}
 /* text styles */
 
 h1 {
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  font-size: 24px;
-  margin-bottom: 6px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 h2 {
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   width: 100%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 16px;
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-}
-
-h2 div {
-  flex-grow: 0.5;
-  height: 0px;
-  border-bottom: 2px solid #000;
-}
-
-h2 span {
-  padding: 0 12px;
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 12px;
 }
 
 h3 {
   font-weight: bold;
-  margin-bottom: 4px;
+  font-size: 12px;
 }
 
 h4 {
-  font-style: italic;
-  margin-bottom: 4px;
+  font-size: 12px;
+  margin-bottom: 6px;
 }
 
 ul {
@@ -111,12 +100,39 @@ ul {
 }
 
 li {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  font-size: 10px;
+  margin-left: 24px;
+}
+
+.contact p {
   font-size: 12px;
+}
+
+.experience p {
+  font-size: 10px;
+  margin-bottom: 4px;
 }
 
 .technologies p,
 .education p {
-  font-size: 12px;
-  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+.details {
+  margin-top: 2px;
+  margin-bottom: 12px;
+}
+
+@media print {
+  .name {
+    color: #222;
+    background-color: white;
+    border-bottom: 1px solid #222;
+    border-top: 1px solid #222;
+  }
+
+  .left {
+    border-right: 1px solid #222;
+  }
 }
