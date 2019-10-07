@@ -65,6 +65,7 @@ footer {
 section.intro p {
   font-size: 30px;
   font-weight: 400;
+  max-width: 700px;
   text-align: center;
   padding: 30px 30px 80px 30px;
   margin: 0 auto;
@@ -96,16 +97,22 @@ section.experience, section.contact {
   background-color: #f2f5f6;
 }
 
-section.contact img {
-  width: 20px;
-  height: 20px;
+section.contact svg {
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
 }
 
 section.contact a {
+  font-weight: 600;
   margin: 20px 0;
   display: flex;
   align-items: center;
+}
+
+section.contact h3 a {
+  font-weight: 600;
+  display: inline;
 }
 
 h2 {
