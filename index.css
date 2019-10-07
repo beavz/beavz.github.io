@@ -117,7 +117,7 @@ section.contact h3 a {
 
 h2 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   margin: 25px 0 0 0;
@@ -133,20 +133,20 @@ header h2 {
 
 h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   margin: 20px 0 6px 0;
   font-weight: 500;
 }
 
 h4 {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 }
 
 p, ul {
   margin: 14px 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
