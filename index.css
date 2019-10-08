@@ -75,11 +75,11 @@ section.intro p {
 section.photo {
   padding: 0;
 }
+
 section.photo img {
   width: 100%;
   height: auto;
-  max-width: 1400px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .bw {
