@@ -71,14 +71,19 @@ section.intro p {
   margin: 0 auto;
 }
 
-.bw {
-  filter: greyscale(100%);
-  -webkit-filter: grayscale(100%);
-}
 
+section.photo {
+  padding: 0;
+}
 section.photo img {
   width: 100%;
-  max-width: 900px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.bw {
+  /* filter: greyscale(100%); */
+  /* -webkit-filter: grayscale(100%); */
 }
 
 section.education > div {
