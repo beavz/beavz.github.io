@@ -77,8 +77,8 @@ section.photo {
 }
 
 section.photo img {
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 49.5vw;
   margin: 0;
 }
 
